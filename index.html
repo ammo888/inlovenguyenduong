@@ -79,6 +79,7 @@
                             <li><a href="#eng-pics">Engagement</a></li>
                             <li class="hidden-sm hidden-xs"><a href="#video-bg">Glimpse of the city</a></li>
                             <li><a href="Meme.html">The Memes</a></li>
+                            <li><button class="transparent-button" onclick="showPopup('shot-counter')">DEGENERATES</button></li>
                         </ul>
                         <ul class="member-actions">
                             <li><a href="#map" class="login">Venue</a></li>
@@ -524,5 +525,47 @@
     ga('create', 'UA-46465113-4', 'auto');
     ga('send', 'pageview');
 </script>
+
+
+<script>
+        function showPopup() {
+<!--            document.getElementById('popup-overlay').style.display = 'block';-->
+            document.getElementById('shot-counter').style.display = 'block';
+        }
+
+        function hidePopup() {
+<!--            document.getElementById('popup-overlay').style.display = 'none';-->
+            document.getElementById('shot-counter').style.display = 'none';
+        }
+</script>
+
+<div class="shot-counter-popup" id="shot-counter">
+    <img class="popup-image" src="img/warning.jpg" alt="Image at the Top">
+    <div class="shot-counter-popup-contents">
+        <h2>Exclusive Access</h2>
+        <p class="paragraph" id="paragraph">Please provide the password</p>
+        <form class="password-form" id="password-form" onsubmit="checkPassword(event)">
+            <input class="password" type="password" id="password" placeholder="Enter the password" required>
+            <input type="submit" value="Enter">
+        </form>
+        <button onclick="hidePopup()">Close</button>
+    </div>
+</div>
+
+<script>
+        function checkPassword(event) {
+            event.preventDefault(); // Prevent the form from submitting
+            const password = document.getElementById('password').value;
+
+            // Replace 'your_password_here' with the actual password you want to use
+            if (password === 'tequila') {
+                window.location.href = 'pages/shots.html'; // Redirect to a new page
+            } else {
+                alert('Incorrect password. Please try again.');
+            }
+        }
+</script>
+
+
 </body>
 </html>
