@@ -4,6 +4,14 @@ html {
 	-ms-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%
 }
+
+::-webkit-scrollbar{ /*Hides scrollbar on chromium and mozilla browsers*/
+    width:0;
+}
+*{
+    scrollbar-width: none;
+}
+
 html,
 ::-webkit-scrollbar {
 	width: 0;
