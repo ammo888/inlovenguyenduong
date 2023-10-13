@@ -230,10 +230,6 @@ td,
 th {
 	padding: 0
 }
-.paragraph {
-    margin: 10px;
-    padding-bottom: 5px;
-}
 
 .transparent-button {
     background-color: transparent;
@@ -255,6 +251,11 @@ th {
 }
 .shot-counter-popup-contents {
     text-align: center;
+}
+
+.paragraph {
+    margin: 10px;
+    padding-bottom: 5px;
 }
 
 .password-form {
