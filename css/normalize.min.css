@@ -240,7 +240,6 @@ th {
 
 .shot-counter-popup {
 	display: none; /* Initially hidden */
-	visibility: hidden;
 	position: fixed;
 	top: 50%;
 	left: 50%;

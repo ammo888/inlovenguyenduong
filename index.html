@@ -79,7 +79,7 @@
                             <li><a href="#eng-pics">Engagement</a></li>
                             <li class="hidden-sm hidden-xs"><a href="#video-bg">Glimpse of the city</a></li>
                             <li><a href="Meme.html">The Memes</a></li>
-                            <li><button class="transparent-button" onclick="showPopup('shot-counter')">DEGENERATES</button></li>
+                            <li><button class="transparent-button" onclick="showPopup('shot-counter-popup')">DEGENERATES</button></li>
                         </ul>
                         <ul class="member-actions">
                             <li><a href="#map" class="login">Venue</a></li>
@@ -529,18 +529,18 @@
 
 <script>
         function showPopup() {
-<!--            document.getElementById('popup-overlay').style.display = 'block';-->
-            document.getElementById('shot-counter').style.display = 'block';
+            var popup = document.getElementById("shot-counter-popup");
+            popup.classList.toggle("show");
         }
 
         function hidePopup() {
-<!--            document.getElementById('popup-overlay').style.display = 'none';-->
-            document.getElementById('shot-counter').style.display = 'none';
+            var popup = document.getElementById("shot-counter-popup");
+            popup.classList.toggle("hide");
         }
 </script>
 
-<!--
-    <div class="shot-counter-popup" id="shot-counter">
+
+<div class="shot-counter-popup" id="shot-counter-popup">
     <img class="popup-image" src="img/warning.jpg" alt="Image at the Top">
     <div class="shot-counter-popup-contents">
         <h2>Exclusive Access</h2>
@@ -552,7 +552,7 @@
         <button onclick="hidePopup()">Close</button>
     </div>
 </div>
--->
+
 <script>
         function checkPassword(event) {
             event.preventDefault(); // Prevent the form from submitting
