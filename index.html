@@ -531,16 +531,8 @@
 <script>
         function showPopup() {
             var popup = document.getElementById("shot-counter-popup");
-            popup.classList.toggle("show");
+            popup.style.display = "block";
         }
-
-        function hidePopup() {
-            var popup = document.getElementById("shot-counter-popup").style.display;
-            if(popup){
-                popup.style.display = "none";
-            }
-        }
-        
 </script>
 
 
@@ -556,6 +548,18 @@
         <button onclick="hidePopup('shot-counter-popup')">Close</button>
     </div>
 </div>
+
+<script>
+        function hidePopup() {
+            var popup = document.getElementById("shot-counter-popup");
+            if(popup){
+                popup.style.display = "none";
+            }
+        }
+
+
+</script>
+
 
 <script>
         function checkPassword(event) {
