@@ -107,8 +107,9 @@
                     <div class="row">
                         <div class="col-md-6 col-sm-6">
                             <div class="form-input-group">
-                                <i class="fa fa-users"></i><input type="number" name="extras" class="" min="0"
-                                                                  max="4"
+                                <i class="fa fa-users"></i><input type="number" name="extras" class="" value="0" min="0"
+                                                                  id="additionalGuests"
+                                                                  max="0"
                                                                   placeholder="Husband/Wife or kids"
                                                                   required>
                             </div>
@@ -157,8 +158,8 @@
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBlPw3GQYI3faa_9mRE6plWuM7xNEmrwH0&callback=initMap"></script>
 
 <script>
-(new URL(window.location.href)).searchParams.forEach((x, y) =>
-    document.getElementById(y).value = x)
+document.getElementById("name").setAttribute("value", (new URL(window.location.href)).searchParams.get("name") || "")
+document.getElementById("additionalGuests").setAttribute("max", (new URL(window.location.href)).searchParams.get("maxAdditional") || 4)
 </script>
 </body>
 </html>
