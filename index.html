@@ -56,6 +56,7 @@
     <link rel="stylesheet" href="css/flexslider.css">
     <link rel="stylesheet" href="css/styles.min.css">
     <link rel="stylesheet" href="css/queries.css">
+    <link rel="stylesheet" href="css/shot_counter.css">
     <link rel="stylesheet" href="node_modules/animate.css/animate.min.css" onerror="loadCssFromCDN('animate.css')">
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" onerror="loadCssFromCDN('font-awesome.css')">
     <link rel="stylesheet" href="css/HomePageStyles.css">
@@ -66,32 +67,34 @@
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade
     your browser</a> to improve your experience.</p>
 <![endif]-->
-<section class="navigation">
-    <header>
-        <div class="header-content">
-            <div class="logo"><a href="#"><img src="img/logo.png" alt="Logo"></a></div>
-            <div class="header-nav">
-                <nav>
-                    <ul class="primary-nav">
-                        <li><a href="#intro">How we met</a></li>
-                        <li><a href="#events">Events</a></li>
-                        <li><a href="#instagram">Instagram</a></li>
-                        <li><a href="#eng-pics">Engagement</a></li>
-                        <li class="hidden-sm hidden-xs"><a href="#video-bg">Glimpse of the city</a></li>
-                    </ul>
-                    <ul class="member-actions">
-                        <li><a href="#map" class="login">Venue</a></li>
-                        <li><a href="#rsvp" class="btn-white btn-small">RSVP</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="navicon">
-                <a class="nav-toggle" href="#"><span></span></a>
-            </div>
-        </div>
-    </header>
-</section>
 <section class="hero">
+    <section class="navigation">
+        <header>
+            <div class="header-content">
+                <div class="logo"><a href="#"><img src="img/logo.png" alt="Logo"></a></div>
+                <div class="header-nav">
+                    <nav>
+                        <ul class="primary-nav">
+                            <li><a href="#intro">How we met</a></li>
+                            <li><a href="#events">Events</a></li>
+                            <li><a href="#instagram">Instagram</a></li>
+                            <li><a href="#eng-pics">Engagement</a></li>
+                            <li class="hidden-sm hidden-xs"><a href="#video-bg">Glimpse of the city</a></li>
+                            <li><a href="Meme.html">The Memes</a></li>
+                            <li><button class="transparent-button" onclick="showPopup('shot-counter-popup')">DEGENERATES</button></li>
+                        </ul>
+                        <ul class="member-actions">
+                            <li><a href="#map" class="login">Venue</a></li>
+                            <li><a href="rsvp.html" class="btn-white btn-small">RSVP</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="navicon">
+                    <a class="nav-toggle" href="#"><span></span></a>
+                </div>
+            </div>
+        </header>
+    </section>
     <div class="container">
         <div class="row">
             <div class="col-md-10 col-md-offset-1">
@@ -447,7 +450,7 @@
         </div>
     </div>
 </section>
--->
+
 <section class="rsvp text-center" id="rsvp">
 
     <div id="rsvp-modal" class="modal fade" tabindex="-1" role="dialog">
@@ -526,7 +529,7 @@
         <div class="row">
             <div class="col-sm-12 text-center content">
                 <span class="to-top-wrapper"><a href="#top" class="to-top"><i class="fa fa-angle-up"></i></a></span>
-                <p>By your friends with lots of <span class="fa fa-heart pulse2"></span> for Ashley and Phat</p>
+                <p>Crafted by The Best Damn IT Team <span class="fa fa-heart pulse2"></span> for Ashley and Phat</p>
             </div>
         </div>
     </div>
@@ -557,5 +560,55 @@
     ga('create', 'UA-46465113-4', 'auto');
     ga('send', 'pageview');
 </script>
+
+
+<script>
+        function showPopup() {
+            var popup = document.getElementById("shot-counter-popup");
+            popup.style.display = "block";
+        }
+</script>
+
+
+<div class="shot-counter-popup" id="shot-counter-popup">
+    <img class="popup-image" src="img/warning.jpg" alt="Image at the Top">
+    <div class="shot-counter-popup-contents">
+        <h2>Exclusive Access</h2>
+        <p class="paragraph" id="paragraph">Please provide the password</p>
+        <form class="password-form" id="password-form" onsubmit="checkPassword(event)">
+            <input class="password" type="password" id="password" placeholder="Enter the password" required>
+            <input type="submit" value="Enter">
+        </form>
+        <button onclick="hidePopup('shot-counter-popup')">Close</button>
+    </div>
+</div>
+
+<script>
+        function hidePopup() {
+            var popup = document.getElementById("shot-counter-popup");
+            if(popup){
+                popup.style.display = "none";
+            }
+        }
+
+
+</script>
+
+
+<script>
+        function checkPassword(event) {
+            event.preventDefault(); // Prevent the form from submitting
+            const password = document.getElementById('password').value;
+
+            // Replace 'your_password_here' with the actual password you want to use
+            if (password === 'tequila') {
+                window.location.href = 'pages/shots.html'; // Redirect to a new page
+            } else {
+                alert('Incorrect password. Please try again.');
+            }
+        }
+</script>
+
+
 </body>
 </html>
