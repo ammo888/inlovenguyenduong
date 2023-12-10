@@ -129,7 +129,12 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-body">
-                    <button type="button" class="closeRedirect" data-dismiss="modal" aria-label="Close"><span>&times;</span><a href="https://inlovenguyenduong.com/index.html"></a>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span>&times;</span>
+                    <script type=" text/javascript"> 
+                        document.getElementById("close").onclick = function(){
+                            location.href = "https://inlovenguyenduong.com/index.html";
+                        };
+                    </script>
                     </button>
                     <div class="section-padding">
                         <h3>Thank you!</h3>
