@@ -182,7 +182,7 @@
                         </div>
                         <div class="col-md-6 col-sm-6">
                             <div class="form-input-group">
-                                <i class="fa fa-key"></i><input type="number" name="invite_code" id="invite_code"
+                                <i class="fa fa-key"></i><input type="number" name="inviteCode" id="inviteCode"
                                                                 class="" min="0"
                                                                 placeholder="Invite code"
                                                                 required>
@@ -225,6 +225,7 @@
 <script>
 document.getElementById("name").setAttribute("value", (new URL(window.location.href)).searchParams.get("name") || "")
 document.getElementById("additionalGuests").setAttribute("max", (new URL(window.location.href)).searchParams.get("maxAdditional") || 4)
+document.getElementById("inviteCode").setAttribute("value", (new URL(window.location.href)).searchParams.get("inviteCode"))
 </script>
 </body>
 </html>
