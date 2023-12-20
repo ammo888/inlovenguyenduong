@@ -55,45 +55,67 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/jquery.fancybox.css">
     <link rel="stylesheet" href="css/flexslider.css">
+    <link rel="stylesheet" href="css/styles.min.css">
     <link rel="stylesheet" href="css/meme.min.css">
     <link rel="stylesheet" href="css/queries.css">
+    <link rel="stylesheet" href="css/shot_counter.css">
     <link rel="stylesheet" href="node_modules/animate.css/animate.min.css" onerror="loadCssFromCDN('animate.css')">
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" onerror="loadCssFromCDN('font-awesome.css')">
+    <link rel="stylesheet" href="css/HomePageStyles.css">
     <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+
 </head>
 <body id="top">
     <!--[if lt IE 8]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade
         your browser</a> to improve your experience.</p>
     <![endif]-->
-    <section class="hero">
-        <section class="navigation">
-            <header>
-                <div class="header-content">
-                    <div class="logo"><a href="#"><img src="img/logo.png" alt="Logo"></a></div>
-                    <div class="header-nav">
-                        <nav>
-                            <ul class="primary-nav">
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="#intro">How we met</a></li>
-                                <li><a href="#events">Events</a></li>
-                                <li><a href="#instagram">Instagram</a></li>
-                                <li><a href="#eng-pics">Engagement</a></li>
-                                <li class="hidden-sm hidden-xs"><a href="#video-bg">Glimpse of the city</a></li>
-                            </ul>
-                            <ul class="member-actions">
-                                <li><a href="#map" class="login">Venue</a></li>
-                                <li><a href="#rsvp" class="btn-white btn-small">RSVP</a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                    <div class="navicon">
-                        <a class="nav-toggle" href="#"><span></span></a>
+    <section class="navigation">
+        <header>
+            <div class="header-content">
+                <div class="logo"><button onclick="window.location.href = 'index.html';"><a href="#"><img src="img/logo.jpg" alt="Logo"></a></button></div>
+                <div class="header-nav">
+                    <nav>
+                        <ul class="primary-nav">
+                            <li><a href="Meme.html">The Memes</a></li>
+                            <li><button class="transparent-button" onclick="showPopup('shot-counter-popup')">DEGENERATES</button></li>
+                        </ul>
+                        <ul class="member-actions">
+                            <li><a href="#map" class="login">Venue</a></li>
+                            <li><a href="rsvp.html" class="btn-white btn-small">RSVP</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="navicon">
+                    <a class="nav-toggle" href="#"><span></span></a>
+                </div>
+            </div>
+        </header>
+    </section>
+    <section class="meme">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <div class="hero-content text-center">
+                        <style>
+                        </style>
+                        <div class="logo-lg">
+                        </div>
                     </div>
                 </div>
-            </header>
-        </section>
-     </section>
+            </div>
+        </div>
+    </section>
+    <script src="js/vendor/jquery-1.11.2.min.js" onerror="loadJsFromCDN('jquery.js')"></script>
+    <script src="node_modules/waypoints/lib/jquery.waypoints.min.js" onerror="loadJsFromCDN('waypoints.js')"></script>
+    <script src="js/jquery.fancybox.pack.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/jquery.flexslider-min.js"></script>
+    <script src="js/jquery.mb.YTPlayer.min.js"></script>
+    <script src="js/vendor/ouical.js"></script>
+    <script src="js/scripts.min.js"></script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBlPw3GQYI3faa_9mRE6plWuM7xNEmrwH0&callback=initMap"></script>
         <!-- Google Analytics -->
         <script>
             (function (i, s, o, g, r, a, m) {
