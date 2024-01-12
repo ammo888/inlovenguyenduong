@@ -375,42 +375,7 @@ header {
   left: 50%;
   transform: translateX(-50%);
 }
-/* ==========================================================================
-Meme
-========================================================================== */
-.meme {
-  min-height: 0px;
-  margin-top: 0rem;
-  background: url('../img/meme.jpg') center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: contain;
-  background-repeat: no-repeat;
-  position: relative;
 
-  
-  .down-arrow a {
-    color: $txt-light;
-  }
-  h1 {
-    color: $txt-light;
-    margin-bottom: 40px;
-  }
-  p.intro {
-    color: $txt-light;
-    font-size: 20px;
-    font-weight: 300;
-    margin-bottom: 80px;
-  }
-  .hero-content {
-    padding-top: 40%;
-  }
-  .hero-content img {
-    width: 55%;
-    margin-bottom: 12%;
-  }
-}
 /* ==========================================================================
 Social share buttons
 ========================================================================== */
