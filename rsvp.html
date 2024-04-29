@@ -16,6 +16,7 @@
     <meta name="theme-color" content="#ffffff">
     <meta property="og:title" content="Ashley's & Phat's Wedding!">
     <meta property="og:description" content="We would like to invite you to our big day.">
+    <meta property="og:image" content="https://wedding.ramswaroop.me/img/hero-min.jpg">
     <meta property="og:type" content="website">
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
@@ -49,20 +50,19 @@
         }
     </script>
 
-<link rel="stylesheet" href="css/normalize.min.css">
-<link rel="stylesheet" href="css/bootstrap.min.css">
-<link rel="stylesheet" href="css/jquery.fancybox.css">
-<link rel="stylesheet" href="css/flexslider.css">
-<link rel="stylesheet" href="css/styles.min.css">
-<link rel="stylesheet" href="css/queries.css">
-<link rel="stylesheet" href="css/shot_counter.css">
-<link rel="stylesheet" href="node_modules/animate.css/animate.min.css" onerror="loadCssFromCDN('animate.css')">
-<link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" onerror="loadCssFromCDN('font-awesome.css')">
-<link rel="stylesheet" href="css/HomePageStyles.css">
-<script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.css">
+    <link rel="stylesheet" href="css/flexslider.css">
+    <link rel="stylesheet" href="css/styles.min.css">
+    <link rel="stylesheet" href="css/queries.css">
+    <link rel="stylesheet" href="css/shot_counter.css">
+    <link rel="stylesheet" href="node_modules/animate.css/animate.min.css" onerror="loadCssFromCDN('animate.css')">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" onerror="loadCssFromCDN('font-awesome.css')">
+    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 </head>
 
-<body id="top">
+<body>
     <section class="navigation">
         <header>
             <div class="header-content">
@@ -70,9 +70,16 @@
                 <div class="header-nav">
                     <nav>
                         <ul class="primary-nav">
+                            <li><a href="#intro">How we met</a></li>
+                            <li><a href="#events">Events</a></li>
+                            <li><a href="#instagram">Instagram</a></li>
+                            <li><a href="#eng-pics">Engagement</a></li>
+                            <li class="hidden-sm hidden-xs"><a href="#video-bg">Glimpse of the city</a></li>
                             <li><a href="Meme.html">The Memes</a></li>
+                            <li><button class="transparent-button" onclick="showPopup('shot-counter-popup')">DEGENERATES</button></li>
                         </ul>
                         <ul class="member-actions">
+                            <li><a href="#map" class="login">Venue</a></li>
                             <li><a href="rsvp.html" class="btn-white btn-small">RSVP</a></li>
                         </ul>
                     </nav>
@@ -108,7 +115,7 @@
                     }
                 </style>
                 
-                <div class="col-sm-4 hidden-xs text-center"><a href="#rsvp"
+                <div class="col-sm-4 hidden-xs text-center"><!--<a href="#rsvp"
                                                                class="btn btn-accent btn-large rsvp-btn">RSVP</a></div>-->
                 <div class="col-sm-4 hidden-xs"></div>
             </div>
@@ -211,6 +218,7 @@
 <script src="js/jquery.mb.YTPlayer.min.js"></script>
 <script src="js/vendor/ouical.js"></script>
 <script src="js/scripts.min.js"></script>
+<script src=" js/scripts.js"></script>
 <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBlPw3GQYI3faa_9mRE6plWuM7xNEmrwH0&callback=initMap"></script>
 
